@@ -1,6 +1,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { marked, Renderer } from "marked";
+import { marked } from "marked";
 import hljs from "highlight.js";
 import DOMPurify from "dompurify";
 import { fetchReadme, type GitHubReadme } from "./github";
