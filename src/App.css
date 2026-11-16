@@ -1,0 +1,185 @@
+
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #ededed;
+  background: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 600px;
+  min-height: 100vh;
+  background: #000;
+}
+
+button, input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  background: #000;
+}
+
+/* TOP BAR */
+
+.toolbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 32px;
+  border-bottom: 1px solid #222;
+  background: #000;
+}
+
+.brand {
+  font-size: 19px;
+  font-weight: 750;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.brand span {
+  color: #888;
+}
+
+.repo-label {
+  font-size: 13px;
+  color: #777;
+}
+
+/* REPOSITORY INPUT */
+
+.repo-input {
+  display: flex;
+  flex: 1;
+  max-width: 650px;
+  gap: 8px;
+}
+
+.repo-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px;
+  color: #ededed;
+  background: #0a0a0a;
+  border: 1px solid #292929;
+  border-radius: 6px;
+  outline: none;
+  font-size: 13px;
+  transition: border-color 150ms;
+}
+
+.repo-input input:focus {
+  border-color: #666;
+}
+
+.repo-input input::placeholder {
+  color: #555;
+}
+
+.repo-input button {
+  padding: 8px 18px;
+  color: #000;
+  background: #ededed;
+  border: 1px solid #ededed;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 150ms;
+}
+
+.repo-input button:hover {
+  background: #ccc;
+}
+
+.repo-input button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+/* READER */
+
+.reader {
+  max-width: 1050px;
+  margin: 48px auto;
+  padding: 0 28px;
+}
+
+.file-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 18px;
+  color: #999;
+  background: #080808;
+  border: 1px solid #222;
+  border-radius: 8px 8px 0 0;
+  font-size: 12px;
+}
+
+.file-label span {
+  color: #ededed;
+}
+
+.markdown-body {
+
+  padding: 48px;
+  min-height: 500px;
+  color: #ededed;
+  background: #050505;
+  border: 1px solid #222;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+
+  --color-canvas-default: #050505;
+  --color-canvas-subtle: #0c0c0c;
+  --color-border-default: #262626;
+  --color-border-muted: #1c1c1c;
+  --color-fg-default: #ededed;
+  --color-fg-muted: #888;
+  --color-accent-fg: #ededed;
+  --color-neutral-muted: #222;
+  --color-btn-border: #333;
+  --color-prettylights-syntax-comment: #777;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+  text-align: center;
+  margin-top: 150px;
+  color: #777;
+}
+
+.empty-state h1 {
+  font-size: 56px;
+  font-weight: 750;
+  letter-spacing: -3px;
+  color: #fff;
+}
+
+.empty-state h1 span {
+  color: #777;
+}
+
+.empty-state p {
+  font-size: 13px;
+}
+
+.error {
+  padding: 14px;
+  margin-bottom: 20px;
+  color: #ededed;
+  background: #110909;
+  border: 1px solid #542020;
+  border-radius: 6px;
+}
